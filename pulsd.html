@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<?php
+    $db = mysqli_connect('hostname','root','password','pulsd');
+?>
+<html>
+  <body>
+  <h1>Pulsd Interview</h1>
+
+    <form action="/action_page.php">
+    Event Name: <input id = "EventName" type="text" name="EvenName" value="event"><br>
+    Description: <input id = "Desctiption" type="text" name="Description" value="description"><br>
+    Location: <input id = "Location" type="text" name="Location" value="location"><br>
+    Date Day: <input id = "Day" type="number" min= "1" max = "31" name="Day" value="Day"><br>
+    Month: <input id = "Month" type="number" min = "1" max = "12" name="Month" value="Month"><br>
+    Year: <input id = "Year" type="number" min = "2018" name="Year" value="Year"><br>
+    Start Time: <input id = "StartTime" type="number" name="StartTime" value="time"><br>
+    Price: <input id = "Price" type="number" name="Price" value = "Price"><br>
+    <button id ="Submit" class="button" onclick="javascript:AddtoDB()">OK</button>
+    <input type="submit" value="Submit">
+    </form>
+
+  </body>
+</html>
+
